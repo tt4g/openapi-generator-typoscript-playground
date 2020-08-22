@@ -1,0 +1,17 @@
+{
+  "disallowAdditionalPropertiesIfNotPresent": true,
+  "sureUniqueParams": true,
+  "enumNameSuffix": "Enum",
+  "enumPropertyNaming": "PascalCase",
+  "legacyDiscriminatorBehavior": true,
+  "modelPropertyNaming": "original",
+  "nullSafeAdditionalProps": true,
+  "prependFormOrBodyParameters": false,
+  "sortModelPropertiesByRequiredFlag": true,
+  "sortParamsByRequiredFlag": true,
+  "supportsES6": true,
+  "useSingleRequestParameter": false,
+  "withInterfaces": false,
+  "withSeparateModelsAndApi": false,
+  "withoutPrefixEnums": false
+}

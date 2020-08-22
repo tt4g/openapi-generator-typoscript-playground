@@ -1,0 +1,37 @@
+{
+  "name": "openapi-generator-typoscript-playground",
+  "version": "1.0.0",
+  "description": "OpenAPITools/openapi-generator playground.",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "openapi:validate": "openapi-generator validate --input-spec ./openapi/openapi.json --recommend",
+    "openapi:generate": "openapi-generator generate --input-spec ./openapi/openapi.json --generator-name typescript-axios --config ./openapi/generator-config-typescript-axios.json --output src/openapi",
+    "test": "cross-env NODE_ENV=test jest",
+    "format": "prettier --write ./src",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+  },
+  "author": "tt4g",
+  "license": "MIT",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^1.0.15-4.3.1",
+    "@types/jest": "^26.0.10",
+    "@types/node": "^12.12.54",
+    "@typescript-eslint/eslint-plugin": "^3.9.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "jest": "^26.4.1",
+    "msw": "^0.20.5",
+    "openapi-backend": "^3.5.1",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.2.0",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
